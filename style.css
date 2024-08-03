@@ -21,7 +21,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
+    display: none; 
 }
 
 .header {
