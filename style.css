@@ -1,0 +1,97 @@
+@font-face {
+    font-family: font;
+    src: url(font/font.otf);
+}
+
+body {
+    font-family: "font";
+    text-decoration: none;
+    background-color: #F1BF98;
+    overflow: hidden;
+}
+
+a {
+    color: #EEE5E9;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.header {
+    text-align: right;
+    word-spacing: 80px;
+    padding: 10px;
+    color: black;
+    font-size: 400%;
+    margin: auto;
+    animation: reveal 1s ease-in-out forwards;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #D4A373;
+    transition: 0.1s ease-in;
+    opacity: 1;
+}
+
+.personal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 500%;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.subp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 400%;
+    animation: fadeIn 1s ease-in-out forwards;
+
+}
+
+/* work.html */
+
+#head2 {
+    text-align: center;
+    font-size: 300%;
+    color: black;
+    text-justify: auto;
+    animation: reveal 1s ease-in-out forwards;
+}
+
+/* Animation keyframes */
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
